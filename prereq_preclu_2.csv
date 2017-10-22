@@ -1,0 +1,114 @@
+,Module,Title,Prereq,Preclu
+0,ACC1002,Financial Accounting,,Students who have passed FNA1002 are not allowed to take ACC1002.
+1,ACC1006,Accounting Information Systems,FNA1002 or ACC1002,Students who have passed FNA1006 are not allowed to take ACC1006.
+2,ACC1701,Accounting for Decision Makers,,ACC1002; ACC1002X
+3,ACC2002,Managerial Accounting,Students must have completed BK1003 or BZ1002 or BH1002 or FNA1002 or FNA1002X or FNA1002E or ACC1002 or ACC1002X or BH1002E or CS1304 or EC3212 or EG1422 before they are allowed to take ACC2002.,BH2002 or BZ3102 or BK2001 or FNA2002 or IE4242
+4,ACC3601,Corporate Accounting and Reporting,FNA1002 or ACC1002,BH3111 or BZ3101 or BK3106 or FNA3111
+5,ACC3603,Assurance and Attestation,FNA1002/ACC1002 and FNA2002 (Students who are not enrolled in the accounting or accounting-specialization program should seek Deans Office permission to read the module),Students who have passed FNA3121 are not allowed to take ACC3603.
+6,ACC3604,Corporate and Securities Law,BSP1004,Students who have passed FNA3122 or LL4055 are not allowed to take ACC3604.
+7,ACC3605,Taxation,FNA1002/ACC1002 and BSP1004,Students who have passed FNA3127 or LL4056 are not allowed to take ACC3605.
+8,ACC3606,Advanced Corporate Accounting and Reporting,FNA3111 or ACC3601,Students who have passed FNA3123 are not allowed to take ACC3606.
+9,ACC3613,Advanced Assurance and Attestation,FNA3121 or ACC3603,Students who have passed FNA3128 are not allowed to take ACC3613.
+10,ACC3614,Valuation,FNA2004 or FIN2004,Students who have passed FNA3126 are not allowed to take ACC3614.
+11,ACC3616,Corporate Governance and Risk Management,"ACC1002 Financial Accounting, BSP1004 Legal
+Environment of Business, FIN2004 Finance","ACC3611 Corporate Governance and Ethics
+ACC3612 Risk Management and Internal Control
+Only available to BBA and BBA(Acc) students from the
+AY2014-15 intake and later"
+12,ACC3619,Integrated Perspective in Accounting and Business,"Completed or concurrently taking the following:
+(a) All BBA (Acc) core modules; and
+(b) all other compulsory accounting modules",
+13,ACC4611,Advanced Taxation,,Students who have passed FNA4114 are not allowed to take ACC4611.
+14,ACC4614,Financial Institution Audit & Compliance,ACC3616 Corporate Governance and Risk Management OR ACC3612 Risk Management and Internal Control,
+15,ACC5001,Business Analysis and Valuation,,
+16,BSP1004,Legal Environment Of Business,,SSB2212 or BH1004 or BZ1004 or BK1006 or GEK1009 or GEM1009k or SSD1203 or BSP1004A or BSP1004B
+17,BSP1005,Managerial Economics,,BH1005 or BZ1006 or BK1008 or All Econs major students.
+18,BSP2001,Macro And International Economics,BSP1005 or BH1005 or BZ1006 or BK1008,(BH2001 or BZ2001 or EC1101 or EC1101E or EC1310 or EC1301 or EC3341 or EC4102 or All Econs major students) and All BBA(Acc) students. EC2102.
+19,BSP2005,Asian Business Environments,BSP2001,BH2005 or BZ2005
+20,BSP3001A,Strategic Management,All foundation modules,BSP3001 or BSP3001B or BSP3001C or BSP3001D or BSP3001E
+21,BSP3001B,Strategic Management,All foundation modules,BSP3001 or BSP3001A or BSP3001C or BSP3001D or BSP3001E
+22,BSP3516,S'pore & ASEAN: Geoeconomics & Geopolitics of Business,"BSP1005 Managerial Economics; and
+BSP2001 Macro and International Economics",Nil
+23,DSC1007,Business Analytics - Models & Decisions,NIL,DSC1007X
+24,DSC2006,Operations Management,,BH2006 or BZ2003 or BK2006 or IE3120. All Industrial &amp; Systems (ISE) students
+25,DSC2008,Business Analytics - Data & Decisions,NIL,"ST1131/ST1131A Introduction to Statistics, ST1232 Statistics for Life Sciences and ST2334 Probability and Statistics."
+26,DSC3201,Supply Chain Management,DSC2006 or BH2006 or BZ2003 or BK2006,BH3201 or BZ3402 or BK3505 or IE4220 or CS5262. All Industrial &amp; Systems Engineering (ISE) students
+27,DSC3202,Purchasing And Materials Management,DSC2006 or BH2006 or BZ2003 or BK2006,BH3202 or BZ3414 or BK3206
+28,DSC3203,Service Operations Management,DSC2006 or BH2006 or BZ2003 or BK2006,BH3203 or BZ3404 or BK3501
+29,DSC3214,Introduction To Optimisation,DSC1007 or [(MA1101R or MA1311) and (MA1521 or MA1102R)],IE2110
+30,DSC3215,Stochastic Models In Management,DSC1007/DSC1007X or ST2131 or ST2334,
+31,DSC3216,Predictive Analytics in Business,,
+32,DSC3224,Dynamic Pricing & Revenue Management,DSC1007 or IE2110 or DSC3214,
+33,DSC4211C,SIOSCM: Operations Strategy,,
+34,DSC4211G,SIOSCM: Service Design,DSC2006 Operations Management,
+35,DSC4213,Analytical Tools for Consulting,DSC1007 or IE2110 or DSC3214,
+36,DSC4215,Data Visualization and Actionable Intelligence,Operations and Technology Management,
+37,DSC4217,Advanced Analytics with R,DSC1007 Business Analytics – Models and Decisions; and DSC2008 Business Analytics – Data and Decisions,
+38,DSC5102,Business Analytics Capstone Project,NIL,NIL
+39,DSC5121,Hands-on with Business Analytics (Finance),NIL,NIL
+40,DSC5211A,Supply Chain Coordination and Risk Management,Knowledge in Operations Management and Supply Chain Management Knowledge of Calculus and Probability,NIL
+41,DSC5211B,Analytical Tools for Consulting,Any introductory course in Statistics.,NIL
+42,DSC5211C,Quantitative Risk Management,DSC5211A,N.A.
+43,FIN2004,Finance,Students must have completed BK1003 or BZ1002 or BH1002 or FNA1002/ACC1002 or FNA1002X/ACC1002X or FNA1002E or BH1002E or EC3212 or EG1422 before they are allowed to take FIN2004.,"Students who have taken CS2251 or EC3209 or EC3333 or BK2004 or BZ2004 or BH2004 or FNA2004 are not allowed to take FIN2004. 1st Year BSc(PFM), all BSc (RE) and Computational Finance are not allowed to take FIN2004."
+44,FIN3101A,Corporate Finance,FNA2004 or FIN2004 or BH2004 or BZ2004 or BK2004,BH3101 or BZ3301 or BK3100 or FNA3101 or FE5105 or FIN3101 or FIN3101B or FIN3101C
+45,FIN3101B,Corporate Finance,FNA2004 or FIN2004 or BH2004 or BZ2004 or BK2004,BH3101 or BZ3301 or BK3100 or FNA3101 or FE5105 or FIN3101 or FIN3101A or FIN3101C
+46,FIN3102,Investment Analysis and Portfolio Management,FNA2004 or FIN2004 or BH2004 or BZ2004 or BK2004,BH3102 or BZ3302 or BK3101 or FNA3102A/B/C or FIN3102A/B/C or FE5108 or EC3333 or CF3101/QF3101
+47,FIN3103,Financial Markets,FNA2004 or FIN2004 or BH2004 or BZ2004 or BK2004,BH3103 or BZ3303 or BK3102 or FNA3103 or FIN3103A or FIN3103B
+48,FIN3103B,Financial Markets,FNA2004 or FIN2004 or BH2004 or BZ2004 or BK2004,BH3103 or BZ3303 or BK3102 or FNA3103 or FIN3103 or FIN3103A
+49,FIN3113,Financial Statement Analysis,FNA1002 or FNA1002X or ACC1002 or ACC1002X or BH1002 or BZ1002 or BK1003 or FNA1002E or BH1002E,BH3113 or BZ3105 or BK3105 or FNA3113
+50,FIN3117,Bank Management,FNA2004/FIN2004 and FNA3102/FIN3102,Students who have passed FNA3117 are not allowed to take FIN3117. Not for students who have passed FE5105.
+51,FIN3118,Financial Risk Management,FNA3101 or FIN3101,BH3118 or BZ3305 or FNA3118
+52,FIN3120B,TIF: Transaction Banking,FIN3101 Corporate Finance,
+53,FIN3120C,TIF: China's Capital Markets,FIN2004 Finance and FIN3103 Financial Markets,
+54,FIN3120D,TIF: Foreign Exchange Trading,FIN2004 Finance and FIN3103 Financial Markets,
+55,FIN3130,Financial Modelling,ACC1002 Financial Accounting • FIN2004 Finance • FIN3102 Investment Analysis and Portfolio Management • An aptitude with mathematics and programming would be a plus.,NIL
+56,FIN3131,Fixed Income Securities,FNA3102 or FIN3102 or FIN3102A or FIN3102B or FIN3102C,FNA3120A or CF3201/QF3201
+57,FIN4112G,SIF: Private Equity,FIN3101 Corporate Finance FIN3102 Investment Analysis and Portfolio Management FIN3103 Financial Markets,FIN4112F: Seminars in Finance: Private Equity and Investment Banking
+58,FIN4112K,SIF: Applied Portfolio Management Techniques,FIN3102 Investment Analysis and Portfolio Management,NIL
+59,FIN4113A,Personal Finance and Wealth Management,FIN3101% and ST1131A,FNA4112E
+60,FIN4113B,Personal Finance and Wealth Management,FIN3101% and ST1131A,FNA4112E
+61,FIN4117,Measuring Success in Philanthropy and Impact Investing,,FIN3133
+62,FIN4122,Entrepreneurial Finance,"FIN2004 Finance
+FIN3101 Corporate Finance",
+63,FIN4123,FinTech Management,"FIN3101 Corporate Finance, FIN3102 Investment Analysis and Portfolio Management, FIN3103 Financial Markets",
+64,FIN6003,Asset Pricing and Microstructure Theory,,
+65,MKT1003,Principles of Marketing,,Students who have taken EC3230/(EC2210) or CS3261/(IC3243) or PR4201 or BK2003 or BZ1003 or BH1003 are not allowed to take MKT1003. All BSc(Real Estate) students are not allowed to take MKT1003.
+66,MKT1705,Principles of Marketing,,MKT1003; MKT1003X; RST and EMG students
+67,MKT2401A,Asian Markets And Marketing Management,MKT1003 or BH1003 or BZ1003 or BK2003,BH2401 or BZ3601 or BK3200 or MKT2401B or MKT2401
+68,MKT2401B,Asian Markets And Marketing Management,MKT1003 or BH1003 or BZ1003 or BK2003,BH2401 or BZ3601 or BK3200 or MKT2401A or MKT2401
+69,MKT2413,Marketing Research,MKT1003 or BH1003 or BZ1003 or BK2003,BH2413 or BZ3614 or BK3202 or MKT2413A or MKT2413B
+70,MKT3402A,Consumer Behaviour,MKT1003 or BH1003 or BZ1003 or BK2003,BH3402 or BZ3602 or BK3201 or MKT3402A or MKT3402B
+71,MKT3402B,Consumer Behaviour,MKT1003 or BH1003 or BZ1003 or BK2003,BH3402 or BZ3602 or BK3201 or MKT3402A or MKT3402B
+72,MKT3402C,Consumer Behaviour,MKT1003 or BH1003 or BZ1003 or BK2003,BH3420 or BZ3605 or BK3203 or MKT3402A or MKT3402B
+73,MKT3412,Services Marketing,MKT1003 or BH1003 or BZ1003 or BK2003,BH3412 or BH3412A or BH3412B or BZ3612 or BK3205 or MKT3412A or MKT3412B
+74,MKT3415,Marketing in a Digital Age,MKT1003,
+75,MKT3417,Customer Relationship Management,MKT1003 Marketing or MKT1003X Marketing,CS4266
+76,MKT3418,Product And Brand Management,MKT1003 or BH1003 or BZ1003 or BK2003,BH3418 or BZ3603 or MKT3418A or MKT3418B
+77,MKT3420,Advertising & Promotion Management,MKT1003 Marketing or MKT1003X Marketing,
+78,MKT3421,Marketing Analysis & Decision Making,,
+79,MKT4413,Pricing Strategy,MKT2401 Asian Markets & Marketing Management,
+80,MKT4417,Consumer Decision Making,Nil,Nil
+81,MNO1001,Management And Organisation,,"Students who have taken BE2106, EG1423, CS1303, BK2002 or BZ1001 or BH1001 are not allowed to take MNO1001. Students who took or are taking HR2001, HR2101, HR3111 or HR3308 cannot take MNO1001"
+82,MNO1706,Organisational Behavior,,MNO1001; MNO1001X
+83,MNO2007,Leadership and Ethics,MNO1001 Management and Organization,NIL
+84,MNO2009,Entrepreneurship,MNO1001 Management and Organisation,
+85,MNO2302,Human Resource Management,MNO1001 or BH1001 or BZ1001 or BK2002 or HR2001 or HR2101 or HR3111 or HR3308,BH2302 or BZ3504 or BK3300 or MNO2302A/B or PL3239 or PS3245
+86,MNO3301,Organisational Behaviour,MNO1001 or BH1001 or BZ1001 or BK2002 or HR2001 or HR2101 or HR3111 or HR3308,BH3301 or BZ3501 or BK3309M or PS3243
+87,MNO3303,Organisational Effectiveness,MNO1001 or BH1001 or BZ1001 or BK2002 or HR2001 or HR2101 or HR3111 or HR3308,BH3303 or BZ3502 or BK4309D or BK3309N
+88,MNO3313J,TILHCM: Employee and Organizational Misbehaviours,MNO1001: Management and Organisation,NIL
+89,MNO3331,Business with a Social Conscience,,
+90,MNO3332,Leading Groups and Teams,,
+91,MNO4313D,SILHCM: Corp Entrepreneurship & Busi Model Evaluation,MNO1001 Management and Organisation,
+92,MNO4313E,SIMHC: Managerial and Organisational Cognition,MNO1001 or HR2001 or HR2101 or HR3111 or HR3308,
+93,TR2201,Entrepreneurial Marketing,,TR3003
+94,TR2202,Technological Innovation,,
+95,TR3001,New Product Development,,
+96,TR3002N,New Venture Creation,,"TR3004, TR3005"
+97,TR3202,Start-up Internship Programme,,TR3102
+98,TR3203E,Start-up Case Study & Analysis,,
+99,TR3203N,Start-up Case Study & Analysis,,TR3103
+100,TR3203P,Start-up Case Study & Analysis,,
+101,TR3203T,Start-up Case Study & Analysis,,TR3103
+102,TR4049N,Seminars in Entrepreneurship,"Depends on the topics offered, there can be prerequisite(s) on existing modules offering similar topics for example new venture creation or new product development.",
+103,TR4049S,Seminars in Entrepreneurship,"Depends on the topics offered, there can be prerequisite(s) on existing modules offering similar topics for example new venture creation or new product development.",
+104,TR4049T,Seminars in Entrepreneurship,"Depends on the topics offered, there can be prerequisite(s) on existing modules offering similar topics for example new venture creation or new product development.",
