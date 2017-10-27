@@ -1,4 +1,5 @@
 library(compare)
+setwd('/Users/Linchun/dsc3214/')
 df<-read.csv('/Users/LinChun/dsc3214/pre-req-clu/raw data/prereq_preclu.csv',stringsAsFactors = F)
 df2<-read.csv('/Users/LinChun/dsc3214/pre-req-clu/raw data/prereq_preclu_2.csv',stringsAsFactors = F)
 df3<-read.csv('/Users/LinChun/dsc3214/1718_s1_modsect_timeslots.csv')
@@ -7,7 +8,6 @@ df$Title<-NULL
 
 df2$X<-NULL
 df2$Title<-NULL
-df
 df<-df[order(df$Module),]
 df2<-df2[order(df2$Module),]
 totaldf<- merge(df,df2,by="Module",all = T)
@@ -119,7 +119,6 @@ for ( i in 1:length(list0[[2]])){
   list0[[2]][i]<-list(unlist(list0[[2]][i])[unlist(list0[[2]][i]) %in% biz.mods])
 }
 
-
 ################
 ####PRECLUSION##
 ################
@@ -176,7 +175,6 @@ for ( i in 1:length(list0[[3]])){
 #### REMOVE ALL THE "OR"####
 ############################
 
-
 for ( i in 1:length(list0[[3]])){
   cat('loop',i,'\n')
   list0[[3]][i]<-list(unlist(list0[[3]][i])[unlist(list0[[3]][i]) %in% biz.mods])
@@ -189,7 +187,7 @@ prereq.mod.list
 preclusion.mod.list
 
 ############
-biz.mods
+#Code to Add module_sectionals -> Not required now
 module_sectionals<-unique(df3$module_sectional)
 
 list.of.add.mods<-c("")
@@ -200,29 +198,15 @@ for( i in 1:length(biz.mods)){
     next
   }
 }
-
-module_sectionals
-list.of.add.mods<-list.of.add.mods[-1]
-list.of.add.mods<-as.numeric(list.of.add.mods)
-biz.mods.to.add<-biz.mods[list.of.add.mods]
-biz.mods.to.add
-
-module_sectionals<-append(as.character(module_sectionals),biz.mods.to.add)
 ###########
-
-
 #Let row be biz mods and col be req/preclu
-pre.req.df<-setNames(data.frame(matrix(ncol = length(prereq.mod.list), nrow = length(module_sectionals))), prereq.mod.list)
-row.names(pre.req.df) <- module_sectionals
-
-pre.clu.df<-setNames(data.frame(matrix(ncol = length(preclusion.mod.list), nrow = length(module_sectionals))), preclusion.mod.list)
-row.names(pre.clu.df) <- module_sectionals
+pre.req.df<-setNames(data.frame(matrix(ncol = length(biz.mods), nrow = length(biz.mods))), biz.mods)
+row.names(pre.req.df) <- biz.mods
+pre.clu.df<-pre.req.df
 
 pre.clu.df<-pre.clu.df[order(row.names(pre.clu.df)),]
 pre.req.df<-pre.req.df[order(row.names(pre.req.df)),]
-pre.req.df
 ####################
-
 
 for(i in 1:length(list0[[2]])){
   if(identical(unlist(list0[[2]][i]), character(0))){
@@ -234,34 +218,20 @@ for(i in 1:length(list0[[2]])){
 }
 
 a<-""
-#length(list0[[1]])
-#pre.req.df[a,j]
 for( i in 1:length(list0[[1]])){
   a<-grep(list0[[1]][i],rownames(pre.req.df))
-  cat("came in i:",i, "\n")
-  for(j in 1:length(colnames(pre.req.df))){
-      cat("came in j:",j,"\n")
-      pre.req.df[a,j]<-ifelse((colnames(pre.req.df)[j] %in% unlist(list0[[2]][i])),1,0)
-      pre.req.df[a,j]
-
+  for( j in 1:length(colnames(pre.req.df))){
+    pre.req.df[a,j]<-ifelse((colnames(pre.req.df)[j] %in% unlist(list0[[2]][i])),1,0)
   }
 }
 
+a<-""
 for( i in 1:length(list0[[1]])){
   a<-grep(list0[[1]][i],rownames(pre.clu.df))
-  cat("came in i:",i, "\n")
-  for(j in 1:length(colnames(pre.clu.df))){
-    cat("came in j:",j,"\n")
+  for( j in 1:length(colnames(pre.clu.df))){
     pre.clu.df[a,j]<-ifelse((colnames(pre.clu.df)[j] %in% unlist(list0[[3]][i])),1,0)
-    pre.clu.df[a,j]
-    
   }
 }
 
-View(pre.req.df)
-View(pre.clu.df)
-
-  remove.pre.clu<-which(colSums(pre.clu.df)==0)
-  remove.pre.req<-which(colSums(pre.req.df)==0)
 write.csv(pre.req.df,"pre_req_df.csv")  
 write.csv(pre.clu.df,"pre_clu_df.csv")
