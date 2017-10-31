@@ -1,26 +1,26 @@
 library(compare)
 setwd('/Users/Linchun/dsc3214/')
 df<-read.csv('/Users/LinChun/dsc3214/pre-req-clu/raw data/prereq_preclu.csv',stringsAsFactors = F)
-df2<-read.csv('/Users/LinChun/dsc3214/pre-req-clu/raw data/prereq_preclu_2.csv',stringsAsFactors = F)
+#df2<-read.csv('/Users/LinChun/dsc3214/pre-req-clu/raw data/prereq_preclu_2.csv',stringsAsFactors = F)
 df3<-read.csv('/Users/LinChun/dsc3214/1718_s1_modsect_timeslots.csv')
 df$X<-NULL
 df$Title<-NULL
 
-df2$X<-NULL
-df2$Title<-NULL
+#df2$X<-NULL
+#df2$Title<-NULL
 df<-df[order(df$Module),]
-df2<-df2[order(df2$Module),]
-totaldf<- merge(df,df2,by="Module",all = T)
+#df2<-df2[order(df2$Module),]
+#totaldf<- merge(df,df2,by="Module",all = T)
 
-totaldf<-totaldf[,c('Module','Prereq.x','Prereq.y','Preclu.x','Preclu.y')]
-totaldf$Prereq.x[which(totaldf$Prereq.x=="")]<-totaldf$Prereq.y[which(totaldf$Prereq.x=="")]
-totaldf$Prereq.x[which(is.na(totaldf$Prereq.x))]<-totaldf$Prereq.y[which(is.na(totaldf$Prereq.x))]
-totaldf$Prereq.y<-NULL
-totaldf$Preclu.x[which(totaldf$Preclu.x=="")]<-totaldf$Preclu.y[which(totaldf$Preclu.x=="")]
-totaldf$Preclu.x[which(is.na(totaldf$Preclu.x))]<-totaldf$Preclu.y[which(is.na(totaldf$Preclu.x))]
-totaldf$Preclu.y<-NULL
+#totaldf<-totaldf[,c('Module','Prereq.x','Prereq.y','Preclu.x','Preclu.y')]
+#totaldf$Prereq.x[which(totaldf$Prereq.x=="")]<-totaldf$Prereq.y[which(totaldf$Prereq.x=="")]
+#totaldf$Prereq.x[which(is.na(totaldf$Prereq.x))]<-totaldf$Prereq.y[which(is.na(totaldf$Prereq.x))]
+#totaldf$Prereq.y<-NULL
+#totaldf$Preclu.x[which(totaldf$Preclu.x=="")]<-totaldf$Preclu.y[which(totaldf$Preclu.x=="")]
+#totaldf$Preclu.x[which(is.na(totaldf$Preclu.x))]<-totaldf$Preclu.y[which(is.na(totaldf$Preclu.x))]
+#totaldf$Preclu.y<-NULL
 
-df<-totaldf
+#df<-totaldf
 df$Module<-gsub("[A-Za-z]$","",df$Module,ignore.case=T)
 
 list0<-as.list(df) 
@@ -28,7 +28,6 @@ list1<-list0
 words<-c("^and","^or","[[:digit:]]")
 words.2<-c("[[:digit:]]")
 
-unlist(list0[[2]][4])
 
 word.cleaning<-function(col,mod){
   col<-unlist(col)
@@ -78,7 +77,6 @@ word.cleaning2<-function(col){
 ####PREREQUISITE##
 ##################
 
-
 #For Sem 1
 for(i in 1:length(list0[[2]])){
   cat('loop',i,'\n')
@@ -99,7 +97,6 @@ list0[[2]]
 list.compare<-list0
 biz.mods<-list0[[1]]
 biz.mods<-unique(gsub("[A-Za-z]$","",biz.mods,ignore.case=T))
-list0[[2]]
 
 to.keep<-append(biz.mods,"or")
  
@@ -110,14 +107,11 @@ for ( i in 1:length(list0[[2]])){
 
 list0[[2]]
 
-#Check for problematic ones
-list0[[2]][80]<-list(c("FIN2004","FIN3102"))
-list0[[2]][91]<-list(c("FIN3101","FIN3102"))
-
 for ( i in 1:length(list0[[2]])){
   cat('loop',i,'\n')
   list0[[2]][i]<-list(unlist(list0[[2]][i])[unlist(list0[[2]][i]) %in% biz.mods])
 }
+
 
 ################
 ####PRECLUSION##
@@ -216,6 +210,8 @@ for(i in 1:length(list0[[2]])){
   }
   
 }
+
+list0[[2]]
 
 a<-""
 for( i in 1:length(list0[[1]])){
