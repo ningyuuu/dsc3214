@@ -229,5 +229,7 @@ for( i in 1:length(list0[[1]])){
   }
 }
 
-write.csv(pre.req.df,"pre_req_df.csv")  
-write.csv(pre.clu.df,"pre_clu_df.csv")
+#write.csv(pre.req.df,"pre_req_df.csv")  
+#write.csv(pre.clu.df,"pre_clu_df.csv")
+
+
